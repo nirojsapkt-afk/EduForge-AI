@@ -1,0 +1,52 @@
+.sidebar-link-active {
+  background: rgba(124, 58, 237, 0.15);
+  border-left: 3px solid #7C3AED;
+  color: #F8FAFC;
+}
+
+.sidebar-link {
+  border-left: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.sidebar-link:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-left-color: rgba(124, 58, 237, 0.4);
+}
+
+.content-output {
+  white-space: pre-wrap;
+  line-height: 1.8;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.content-output h1, .content-output h2, .content-output h3 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #7C3AED, #0EA5E9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+.card-hover:hover {
+  background: rgba(255, 255, 255, 0.04);
+  transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out;
+}
